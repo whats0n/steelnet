@@ -1,0 +1,417 @@
+=light
+	font-family: "CirceLight", Arial, sans-serif
+=reg
+	font-family: "Circe-Regular", Arial, sans-serif
+=bold
+	font-family: "CirceBold", Arial, sans-serif
+
+.b-button
+	color: #FFF !important
+	text-decoration: none !important
+	font-size: 18px
+	+bold
+	display: inline-block
+	line-height: 39px
+	padding: 0 34px
+	background-color: #1D7AA0
+	position: relative
+	&:active
+		top: 1px
+
+.main
+	h2
+		+bold
+		font-size: 36px
+		line-height: 1
+		letter-spacing: 0.005em 
+.preview
+	background: url(../img/preview.jpg) no-repeat
+	+cover
+	position: relative
+	text-align: center
+	padding: 75px 0 90px
+	&:before
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		content: "" 
+		background: #233b4e
+		+opacity(0.8) 
+	.container
+		position: relative
+		z-index: 2
+	h1
+		+bold
+		font-size: 46px
+		line-height: 48px
+		color: #fff
+		letter-spacing: 0.005em 
+		max-width: 840px
+		margin: 0 auto 32px
+		span
+			color: #40c8f4 
+	hr
+		width: 127px
+		height: 3px
+		background: #fff
+		+opacity(0.2)
+		margin: 0 auto 30px
+		border: none
+	p
+		+light
+		font-size: 18px
+		line-height: 24px
+		color: #fff
+		max-width: 560px
+		margin: 0 auto 55px
+	&__btn
+		+bold
+		font-size: 18px
+		color: #fff
+		border: 3px solid #fff
+		padding: 20px 36px
+		display: inline-block
+		vertical-align: top 
+		background: none
+		position: relative
+		&:active
+			top: 1px
+			
+.prod
+	overflow: hidden
+	text-align: center
+	padding: 60px 0 60px
+	h2
+		color: #2b4252 
+		margin-bottom: 30px
+	&__row
+		margin: 0 -37px
+		+clr
+	&__col
+		width: 33.3%
+		padding: 0 37px 30px
+		+box 
+		float: left
+	&__img
+		font-size: 0
+		width: 100%
+		margin-bottom: 22px
+		img
+			width: 100%
+	p
+		+reg
+		font-size: 20px
+		line-height: 1
+		letter-spacing: 0.025em 
+		color: #21a9d6
+		max-width: 220px
+		margin: 0 auto 
+		
+.about
+	background: #29aad3	
+	position: relative
+	color: #fff 
+	padding: 42px 0 40px 
+	&:before
+		content: "" 
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background: url(../img/about-bg.png) no-repeat center center		
+		+r(1200)
+			+cover
+	.container
+		position: relative
+		z-index: 2
+	h2
+		text-align: center
+		color: #fff
+		margin-bottom: 25px 
+	&__row
+		+clr
+	&__map
+		margin: 5px 0 20px
+		width: 52%
+		font-size: 0
+		float: left
+		border: 8px solid #FFF
+		+box
+		+box-shadow(0 3px 0 rgba(69, 143, 167, 0.38))
+		img
+			width: 100%
+	&__text
+		width: 48%
+		float: left
+		padding-bottom: 20px
+		p
+			+reg
+			font-size: 16px
+			line-height: 1.5
+			margin-bottom: 10px
+	&__btn
+		padding: 13px 0 0 
+		.btn-white
+			+reg
+			font-size: 14px
+			color: #fff
+			border: 2px solid #fff
+			padding: 6px 23px 5px
+			background: none 
+			position: relative
+			&:active
+				top: 1px
+				
+.numbers
+	background: #1d7aa0
+	text-align: center
+	padding: 47px 0 45px
+	position: relative
+	&:before
+		position: absolute
+		top: 0
+		left: 50%
+		margin-left: -90px
+		+arr(180, 17, #29aad3, b)
+		content: "" 
+	&__box
+		display: inline-block
+		vertical-align: top
+		padding: 0 75px
+		color: #fff
+		p
+			max-width: 180px
+			+bold
+			font-size: 24px
+			line-height: 1
+	&__title
+		+bold
+		font-size: 100px
+		line-height: 1
+		display: block
+		position: relative
+		&:before, &:after
+			content: ""
+			position: absolute
+			top: 50%
+			margin: -3px 10px 0
+			opacity: 0.3
+			width: 26px
+			height: 6px
+			background-color: #F3F3F3
+		&:before
+			right: 100%
+		&:after
+			left: 100%
+			
+.trust
+	padding: 55px 0 95px
+	h2
+		color: #2B4252
+		text-align: center
+		margin-bottom: 25px
+	&__slider
+		font-size: 0
+	&__slide
+		width: 33.3%
+		+box
+		padding: 0 10px
+		float: left 
+		a
+			display: block
+			&:hover
+				.trust__logo
+					+gray-zero
+	&__logo
+		background-color: #eff1f3
+		height: 180px
+		+vertical
+		margin-bottom: 5px
+		+gray
+		+transition(all 0.2s)
+		img
+			max-width: 90%
+			display: inline-block
+			vertical-align: middle
+	p
+		color: #2B4252
+		+reg
+		font-size: 18px
+		padding: 0 10px 
+		line-height: 1.1
+
+.breadcrumbs
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: middle
+		+reg
+		font-size: 14px
+		line-height: 30px
+		color: #21a9d6 
+		&:after
+			display: inline-block
+			vertical-align: middle
+			content: "→"
+			margin: 0 3px 
+		a
+			color: #21a9d6 
+
+.center
+	max-width: 920px
+	margin: 0 auto
+	padding: 0 20px 
+.page-inner
+	max-width: 830px
+.box
+	+clr
+	padding: 20px 0  
+	&__left
+		float: left
+		margin-right: 30px 
+	&__big
+		width: 300px
+		margin-bottom: 30px
+		img
+			max-width: 100%
+			max-height: 100%  
+			display: inline-block
+			vertical-align: middle
+		.box__slide
+			height: 200px 
+			width: 100%
+			+vertical
+			background: #fff 
+	&__small
+		width: 240px
+		.slick-track
+			padding: 5px 0 
+		.box__slide
+			width: 77px
+			height: 67px
+			+vertical
+			border: 1px solid transparent
+			position: relative
+			cursor: pointer
+			&.slick-active
+				&.is-active
+					border-color: #21a9d6
+					&:after
+						display: block
+			&.is-first
+				border-color: #21a9d6
+				&:after
+					display: block
+			&:after
+				content: "" 
+				position: absolute
+				top: -5px
+				left: 50%
+				margin-left: -6px
+				+arr(12, 5, #21a9d6, t)
+				display: none
+			img
+				display: inline-block
+				vertical-align: middle
+				max-width: 100%
+				max-height: 100% 
+	&__info
+		overflow: hidden
+	p
+		+reg
+		color: #647987
+		font-size: 16px
+		line-height: 22px
+		b
+			+bold
+			color: #2B4252	
+	&__btn
+		padding: 20px 0 
+	&__desc
+		margin-bottom: 15px
+	.fotorama
+		.fotorama__thumb
+			img
+				max-width: 100% !important
+				width: auto !important
+	
+
+.link
+	color: #21A9D6
+	font-size: 14px
+	+reg
+
+.title-h3
+	+bold
+	font-size: 22px
+	color: #2B4252
+	
+.characteristic
+	padding: 10px 0  
+	.title-h3
+		margin-bottom: 7px
+	&__table
+		width: 100%
+		overflow: auto
+		table
+			min-width: 790px
+			th
+				background-color: rgba(100, 121, 135, 0.1)
+				color: #647987
+				font-size: 15px
+				+bold
+				text-align: left
+				padding: 8px 15px 
+			th, td
+				vertical-align: top
+			td
+				color: #647987
+				+bold
+				font-size: 16px
+				padding: 17px 15px 
+
+.tags
+	padding: 20px 0 30px
+	border-bottom: 1px dotted #bfc6cb 
+	max-width: 790px 
+	margin-bottom: 25px
+	p
+		font-size: 14px
+		line-height: 24px
+		color: #4C4C4C
+		+reg
+		span, a
+			margin-right: 5px
+
+.similar
+	max-width: 790px 
+	+clr
+	&__items
+		+clr
+		margin: 0 -20px 
+	&__item
+		width: 50%
+		+clr
+		padding: 20px 20px
+		float: left
+		+box
+	&__img
+		float: left
+		background-color: rgba(100, 121, 135, 0.15)
+		width: 110px
+		height: 110px
+		margin: 0 10px 0 0
+	&__text
+		overflow: hidden
+	&__title
+		display: block
+		color: #21A9D6
+		font-size: 16px
+		+bold
+	p
+		font-size: 14px
+		color: #647987
+		+reg
