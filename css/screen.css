@@ -129,7 +129,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .breadcrumbs li:after { display: inline-block; vertical-align: middle; content: "→"; margin: 0 3px; }
 .breadcrumbs li a { color: #21a9d6; }
 
-.center { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+.center { max-width: 920px; margin: 0 auto; padding: 20px 20px; }
 
 .page-inner { max-width: 830px; }
 
