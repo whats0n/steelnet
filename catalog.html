@@ -42,7 +42,7 @@
 					<div class="box__info">
 						<p>Пару строк текста с кратким описанияем ящика.</p>
 						<div class="box__btn">
-							<a href="#" class="b-button">Узнать цену</a>
+							<a href="#" class="b-button js-popup-btn">Узнать цену</a>
 						</div>
 						<div class="box__desc">
 							<p><b>Описание</b></p>
@@ -130,6 +130,53 @@
 	</div>
 </div>
 <!-- load scripts -->
+
+<div class="js-popup">
+	<div class="overlay"></div>
+	<div class="popup">
+		<div class="form">
+			<form action="">
+				<span class="form__title">Запрос о цене товара</span>
+				<p>Для получения свежей информации об актуальных ценах на нашу продукцию заполните данные ниже.</p>
+				<div class="form__field">
+					<span class="form__label">Ваше имя и фамилия *</span>
+					<input type="text" class="form-input">
+				</div>
+				<div class="form__field">
+					<span class="form__label">Компания *</span>
+					<input type="text" class="form-input">
+				</div>
+				<div class="form__field">
+					<span class="form__label">Выберите город</span>
+					<div class="select js-select">
+					    <span class="select__text js-select-text">Алчевск</span>
+					    <ul class="select__list js-select-list">
+					        <li data-val="Алчевск">Алчевск</li>
+					        <li data-val="Алчевск1">Алчевск1</li>
+					        <li data-val="Алчевск2">Алчевск2</li>
+					    </ul>
+					    <select>
+					          <option value="Алчевск">Алчевск</option>
+					          <option value="Алчевск1">Алчевск1</option>
+					          <option value="Алчевск2">Алчевск2</option>
+					    </select>
+					</div>
+				</div>
+				<div class="form__field">
+					<span class="form__label">Электронная почта*</span>
+					<input type="text" class="form-input">
+				</div>
+				<div class="form__field">
+					<span class="form__label">Телефон*</span>
+					<input type="text" class="form-input">
+				</div>
+				<div class="form__btn">
+					<button class="b-button">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html>

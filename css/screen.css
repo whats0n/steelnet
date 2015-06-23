@@ -68,6 +68,19 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .b-button { color: white !important; text-decoration: none !important; font-size: 18px; font-family: "CirceBold", Arial, sans-serif; display: inline-block; line-height: 39px; padding: 0 34px; background-color: #1d7aa0; position: relative; }
 .b-button:active { top: 1px; }
 
+.form-input { color: #647987 !important; font-family: "Circe-Regular", Arial, sans-serif; font-size: 15px !important; border: 1px solid #c4cace !important; padding: 9px 7px 6px !important; -moz-box-shadow: none !important; -webkit-box-shadow: none !important; box-shadow: none !important; background: none !important; width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; height: auto !important; }
+
+.select { position: relative; cursor: pointer; color: #647987; font-family: "Circe-Regular", Arial, sans-serif; font-size: 15px; margin-bottom: 10px; }
+.select select { opacity: 0; position: absolute; top: 0; left: 0; z-index: 1; }
+
+.select__text { position: relative; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background: none; border: 1px solid #c4cace; padding: 10px 29px 6px 7px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; z-index: 2; }
+.select__text:after { content: ""; position: absolute; right: 13px; top: 50%; margin-top: -4px; width: 0px; height: 0px; border-style: solid; border-width: 8px 4.5px 0 4.5px; border-color: #2b4252 transparent transparent transparent; }
+
+.select__list { position: absolute; display: none; left: 0; right: 0; top: 100%; z-index: 200; background: white; border: 1px solid #c4cace; border-top: none; max-height: 200px; -ms-overflow-y: auto; overflow-y: auto; -ms-overflow-x: hidden; overflow-x: hidden; }
+.select__list li { padding: 7px 7px 4px; cursor: pointer; line-height: 1; text-align: left; }
+.select__list li:first-child { border-top: none; }
+.select__list li:hover { background: #647987; color: white; }
+
 .main h2 { font-family: "CirceBold", Arial, sans-serif; font-size: 36px; line-height: 1; letter-spacing: 0.005em; }
 
 .preview { background: url(../img/preview.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; text-align: center; padding: 75px 0 90px; }
@@ -183,3 +196,17 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .similar__text { overflow: hidden; }
 .similar__title { display: block; color: #21a9d6; font-size: 16px; font-family: "CirceBold", Arial, sans-serif; }
 .similar p { font-size: 14px; color: #647987; font-family: "Circe-Regular", Arial, sans-serif; }
+
+.js-popup { background: rgba(0, 78, 110, 0.9); position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 9000; display: none; }
+.js-popup.is-active { display: block; }
+
+.overlay { position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 1; }
+
+.popup { position: absolute; top: 70px; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); background-color: #ededed; max-width: 370px; width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 20px 54px; z-index: 2; }
+
+.form__field { padding: 0 0 3px; }
+.form__label { color: #647987; font-size: 15px; font-family: "Circe-Regular", Arial, sans-serif; display: block; margin-bottom: 1px; }
+.form__btn { width: 100%; padding: 6px 0 14px; }
+.form__btn .b-button { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.form__title { font-size: 24px; color: #2b4252; font-family: "CirceBold", Arial, sans-serif; display: block; text-align: center; margin-bottom: 10px; }
+.form p { color: #647987; font-size: 15px; font-family: "Circe-Regular", Arial, sans-serif; margin-bottom: 15px; }
